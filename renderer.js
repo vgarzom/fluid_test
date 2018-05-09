@@ -202,25 +202,25 @@ var Renderer = (function () {
 
         wgl.createProgramsFromFiles({
             sphereProgram: {
-                vertexShader: 'shaders/sphere.vert',
-                fragmentShader: 'shaders/sphere.frag'
+                vertexShader: shaders_url + 'sphere.vert',
+                fragmentShader: shaders_url + 'sphere.frag'
             },
             sphereDepthProgram: {
-                vertexShader: 'shaders/spheredepth.vert',
-                fragmentShader: 'shaders/spheredepth.frag'
+                vertexShader: shaders_url + 'spheredepth.vert',
+                fragmentShader: shaders_url + 'spheredepth.frag'
             },
             sphereAOProgram: {
-                vertexShader: 'shaders/sphereao.vert',
-                fragmentShader: 'shaders/sphereao.frag'
+                vertexShader: shaders_url + 'sphereao.vert',
+                fragmentShader: shaders_url + 'sphereao.frag'
             },
             compositeProgram: {
-                vertexShader: 'shaders/fullscreen.vert',
-                fragmentShader: 'shaders/composite.frag',
+                vertexShader: shaders_url + 'fullscreen.vert',
+                fragmentShader: shaders_url + 'composite.frag',
                 attributeLocations: { 'a_position': 0}
             },
             fxaaProgram: {
-                vertexShader: 'shaders/fullscreen.vert',
-                fragmentShader: 'shaders/fxaa.frag',
+                vertexShader: shaders_url + 'fullscreen.vert',
+                fragmentShader: shaders_url + 'fxaa.frag',
                 attributeLocations: { 'a_position': 0}
             },
         }, (function (programs) {

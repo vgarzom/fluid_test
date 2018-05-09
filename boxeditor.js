@@ -374,24 +374,24 @@ var BoxEditor = (function () {
 
         wgl.createProgramsFromFiles({
             backgroundProgram: {
-                vertexShader: 'shaders/background.vert',
-                fragmentShader: 'shaders/background.frag'
+                vertexShader: shaders_url + 'background.vert',
+                fragmentShader: shaders_url + 'background.frag'
             },
             boxProgram: {
-                vertexShader: 'shaders/box.vert',
-                fragmentShader: 'shaders/box.frag'
+                vertexShader: shaders_url + 'box.vert',
+                fragmentShader: shaders_url + 'box.frag'
             },
             boxWireframeProgram: {
-                vertexShader: 'shaders/boxwireframe.vert',
-                fragmentShader: 'shaders/boxwireframe.frag'
+                vertexShader: shaders_url + 'boxwireframe.vert',
+                fragmentShader: shaders_url + 'boxwireframe.frag'
             },
             gridProgram: {
-                vertexShader: 'shaders/grid.vert',
-                fragmentShader: 'shaders/grid.frag'
+                vertexShader: shaders_url + 'grid.vert',
+                fragmentShader: shaders_url + 'grid.frag'
             },
             pointProgram: {
-                vertexShader: 'shaders/point.vert',
-                fragmentShader: 'shaders/point.frag'
+                vertexShader: shaders_url + 'point.vert',
+                fragmentShader: shaders_url + 'point.frag'
             }
         }, (function (programs) {
             for (var programName in programs) {
